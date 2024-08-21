@@ -9,3 +9,12 @@ sum(n) = 1 + 2 + 3 + 4 + 5 + ... + n
 sum(n) = sum(n-1) + n
 
 '''
+
+def sum(n):
+    if(n==1):
+        return 1;
+    return sum(n-1) + n;
+
+s = int(input("Enter your number to see the sum: "));
+
+print(sum(s));
