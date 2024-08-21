@@ -11,5 +11,7 @@ def f_to_c(f):
     return c;
 
 f = int(input("Enter temperature in F: "));
-print(f_to_c(f));
+c = f_to_c(f);
+
+print(f"{round(c, 3)} °C")
 
