@@ -22,28 +22,38 @@ if(computer == you):
 
 else:
 
-    if(computer == -1 and you == 1):
+    if((computer - you) == -1 or (computer - you) == 2):
+        print("You Lose!!");
+    
+    else:
+        print("You Win!!");
+
+    '''
+    The above logic is written on the basis of the value of (computer - you)
+        
+
+    if(computer == -1 and you == 1): (computer - you) = -2
         print("You Win!");
 
-    elif(computer == -1 and you == 0):
+    elif(computer == -1 and you == 0): (computer - you) = -1
         print("You Lose!");
 
-    elif(computer == 1 and you == -1):
+    elif(computer == 1 and you == -1): (computer - you) = 2
         print("You Lose!");
 
-    elif(computer == 1 and you == 0):
+    elif(computer == 1 and you == 0): (computer - you) = 1
         print("You Win!");
 
-    elif(computer == 0 and you == -1):
+    elif(computer == 0 and you == -1): (computer - you) = 1
         print("You Win!");
 
-    elif(computer == 0 and you == 1):
+    elif(computer == 0 and you == 1): (computer - you) = -1
         print("You Lose!");
 
     else:
         print("Something went wrong!!!");
 
-
+    '''
 
 
 
